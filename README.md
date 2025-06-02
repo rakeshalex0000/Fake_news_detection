@@ -17,10 +17,27 @@ The dataset contains metadata of news articles with the following columns:
 > The dataset file should be named `News_dataset.csv` and placed in the `/content/` directory.
 
 ---
+🧹 Data Preprocessing
+Missing values are filled with empty strings.
 
-## 🧰 Dependencies
+A new content column is created by merging the author and title.
 
-Make sure you have the following Python libraries installed:
+Stemming is applied to reduce words to their root form.
 
-```bash
-pip install numpy pandas scikit-learn nltk
+Text data is converted to numerical features using TfidfVectorizer.
+
+🧪 Model Training
+The dataset is split into training and testing sets (80/20 split), and the model is trained using Logistic Regression.
+
+⚙️ Model Evaluation
+Accuracy on training data and test data is printed using accuracy_score.
+
+🔮 Prediction Example
+A sample news item from the test set is used for prediction, and the model outputs whether it's Real or Fake.
+
+📊 Results
+The model typically achieves:
+
+Training Accuracy: ~98%
+
+Test Accuracy: ~94%
