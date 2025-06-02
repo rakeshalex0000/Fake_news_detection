@@ -1,5 +1,4 @@
 # Fake_news_detection
-readme_text = """# 📰 Fake News Detection using Logistic Regression
 
 This project aims to detect fake news using Natural Language Processing (NLP) and machine learning. The model uses logistic regression to classify news articles as either **real (0)** or **fake (1)** based on their content.
 
